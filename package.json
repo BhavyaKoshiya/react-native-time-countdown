@@ -35,6 +35,16 @@
     "release": "release-it"
   },
   "keywords": [
+    "react-native-component",
+    "react-component",
+    "counter",
+    "countdown",
+    "countdown",
+    "timer",
+    "stopwatch",
+    "reset",
+    "hooks",
+    "clock",
     "react-native",
     "ios",
     "android"
