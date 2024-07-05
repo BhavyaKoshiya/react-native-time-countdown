@@ -86,7 +86,7 @@ const CountDownTimer = forwardRef<CountDownTimerHandle, CountDownTimerProps>(
       let displayTime = '';
       if (props.format) {
         if (props.format === 'DHMS') {
-          displayTime = `${Days}:${hr}:${min}:${sec}`;
+          displayTime = `${props.showDoubleZero && Days === 0 ? '00' : Days}:${hr}:${min}:${sec}`;
         } else if (props.format === 'HMS') {
           displayTime = `${
             props.showDoubleZero && totalHours === 0 ? '00' : totalHours
