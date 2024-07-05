@@ -12,21 +12,50 @@ import React, {
 import { Text, View, ViewStyle, TextStyle } from 'react-native';
 
 interface CountDownTimerProps {
+  /**
+   * Total number of seconds to be passed to the timer component.
+   * Example:- passing {60} seconds will give timestamp of 01:00 minutes to the timer
+   */
   timestamp?: number;
+  /**
+   * Delay of timer in ms. Default is 1000ms (1 second)
+   */
   delay?: number;
-  days?: number;
-  hours?: number;
-  minutes?: number;
-  seconds?: number;
+  /**
+   * Callback for the timer countdown progress.
+   * You can keep track of the progress of the timer countdown by remaining seconds.
+   */
   timerOnProgress?: (timeStamp: number) => void;
+  /**
+   * Callback when the timer countdown ends.
+   * This is a function where you can alert the user that the timer has ended.
+   */
   timerCallback?: (isComplete: boolean) => void;
+  /**
+   * Style of Timer Component Container.
+   */
   containerStyle?: ViewStyle;
+  /**
+   * Style of Component Timer Text.
+   */
   textStyle?: TextStyle;
+  /**
+   * Specify the format in you want to see your timer otherwise it will show in Default format.
+   * DHMS | DHM | DH | HMS | HM | MS
+   */
   format?: 'DHMS' | 'HMS' | 'MS' | 'HM' | 'DHM' | 'DH';
+  /**
+   * Default is false.
+   * If showDoubleZero is true, ensures that the first level of time units (days, hours, or minutes).
+   * Displays as '00' when their value is less than 10. This prop does not affect seconds display.
+   */
   showDoubleZero?: boolean;
 }
 
 export interface CountDownTimerHandle {
+  /**
+   * This Function resets timer to start from default value again.
+   */
   resetTimer: () => void;
 }
 
