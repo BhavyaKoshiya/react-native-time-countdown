@@ -1,16 +1,16 @@
-# react-native-countdown-timer
+# react-native-time-countdown
 
-[![npm version](https://badge.fury.io/js/react-native-countdown-timer.svg)](https://www.npmjs.com/package/react-native-countdown-timer)
-[![npm](https://img.shields.io/npm/dm/react-native-countdown-timer.svg)]()
+[![npm version](https://badge.fury.io/js/react-native-time-countdown.svg)](https://www.npmjs.com/package/react-native-time-countdown)
+[![npm](https://img.shields.io/npm/dm/react-native-time-countdown.svg)]()
 
-<i>react-native-countdown-timer</i> is a small library built with TypeScript that provides a custom countdown timer
+<i>react-native-time-countdown</i> is a small library built with TypeScript that provides a custom countdown timer
 component created using a custom hook. All you have to do is pass a timestamp(as total number of seconds) to it and it will calculate the total number of days, hours, minutes and seconds automatically.
 
 It also supports a callback function which you can utilize to let the user know when the timer is over. You can also give an option to the user to reset the timer using this function <i>refTimer.current.resetTimer()</i>.
 
 # Contents
 
-- [The package](#react-native-countdown-timer)
+- [The package](#react-native-time-countdown)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -22,13 +22,13 @@ It also supports a callback function which you can utilize to let the user know 
 from npm
 
 ```bash
-npm install react-native-countdown-timer
+npm install react-native-time-countdown
 ```
 
 from yarn
 
 ```bash
-yarn add react-native-countdown-timer
+yarn add react-native-time-countdown
 ```
 
 Note: Linking and Pod install not needed.
@@ -42,7 +42,7 @@ Note: Linking and Pod install not needed.
 
 import React, { useRef, useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-import CountDownTimer from 'react-native-countdown-timer';
+import CountDownTimer from 'react-native-time-countdown';
 
 function CountdownTimerApp() {
   // Timer References

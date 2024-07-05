@@ -1,5 +1,5 @@
 {
-  "name": "react-native-countdown-timer",
+  "name": "react-native-time-countdown",
   "version": "0.1.0",
   "description": "Countdown Timer Functional Component Package for React Native Projects with JavaScript and TypeScript.",
   "main": "lib/commonjs/index",
@@ -26,7 +26,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace react-native-countdown-timer-example",
+    "example": "yarn workspace react-native-time-countdown-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -41,14 +41,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BhavyaKoshiya/react-native-countdown-timer.git"
+    "url": "git+https://github.com/BhavyaKoshiya/react-native-time-countdown.git"
   },
   "author": "Bhavya Koshiya <bhavyakoshiya555@gmail.com> (https://github.com/BhavyaKoshiya)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BhavyaKoshiya/react-native-countdown-timer/issues"
+    "url": "https://github.com/BhavyaKoshiya/react-native-time-countdown/issues"
   },
-  "homepage": "https://github.com/BhavyaKoshiya/react-native-countdown-timer#readme",
+  "homepage": "https://github.com/BhavyaKoshiya/react-native-time-countdown#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
