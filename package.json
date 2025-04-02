@@ -1,6 +1,6 @@
 {
   "name": "react-native-time-countdown",
-  "version": "0.3.0",
+  "version": "0.2.0",
   "description": "Countdown Timer Functional Component Package for React Native Projects with JavaScript and TypeScript.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
