@@ -115,16 +115,24 @@ const CountDownTimer = forwardRef<CountDownTimerHandle, CountDownTimerProps>(
       let displayTime = '';
       if (props.format) {
         if (props.format === 'DHMS') {
-          displayTime = `${props.showDoubleZero && Days === 0 ? '00' : Days}:${hr}:${min}:${sec}`;
+          displayTime = `${props.showDoubleZero && Days === 0 ? '00' : Days < 10 ? `0${Days}` : Days}:${hr}:${min}:${sec}`;
         } else if (props.format === 'HMS') {
           displayTime = `${
-            props.showDoubleZero && totalHours === 0 ? '00' : totalHours
+            props.showDoubleZero && totalHours === 0
+              ? '00'
+              : totalHours < 10
+                ? `0${totalHours}`
+                : totalHours
           }:${min}:${sec}`;
         } else if (props.format === 'MS') {
           displayTime = `${totalMinutes}:${sec}`;
         } else if (props.format === 'HM') {
           displayTime = `${
-            props.showDoubleZero && totalHours === 0 ? '00' : totalHours
+            props.showDoubleZero && totalHours === 0
+              ? '00'
+              : totalHours < 10
+                ? `0${totalHours}`
+                : totalHours
           }:${min}`;
         } else if (props.format === 'DHM') {
           displayTime = `${Days}:${hr}:${min}`;
